@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    
+    <title>ITI | Instituto Tecnologico Informatico</title>
+</head>
+<body>     
+    <div class="container">
+        <div class="video"> 
+            <video src="media/fondo.mp4"autoplay muted loop></video>
+        </div>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="elegir"></div>
+                    <button type="button" class="pressBtn" onclick="login()">Iniciar sesion</button>
+                    <button type="button" class="pressBtn" onclick="registrar()">Registrarse</button>
+                </div>
+                <div class="redes">
+                    <p>Ingresar con:</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <form id="login" class="input-agr ">
+                    <input type="text" id="ci" class="input-field" placeholder="Cedula de Identidad" required>
+                    <input type="password" id="contraseña" class="input-field" placeholder="Contraseña" required>
+                    <input type="checkbox" class="checkbox"><span>Recordar Contraseña</span>
+                    <button type="button" class="submit-btn" onclick="acceder()">Acceder</button>
+                </form>
+                <form id="registrar" class="input-agr">
+                    <input type="text" class="input-field" id="username" placeholder="Nombre" required>
+                    <input type="text" class="input-field" id="ci" placeholder="Cedula de Identidad" required>
+                    <input type="password" class="input-field" id="password" placeholder="Contraseña" required>
+                    <input type="checkbox" class="checkbox"><span>Acepto los Términos y Condiciones</span>
+                    <button type="button" class="submit-btn">Registrar</button>
+                </form>
+                
+            </div>
+        <script>
+            var x = document.getElementById("login")
+            var y = document.getElementById("registrar")
+            var z = document.getElementById("elegir")
+    
+            function login (){
+                x.style.left = "50px"
+                y.style.left = "450px"
+                z.style.left = "0px"
+            }
+            function registrar (){
+                x.style.left = "-400px"
+                y.style.left = "50px"
+                z.style.left = "120px"
+            }
+        </script>
+    </div>
+    <script></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/869eb9e89e.js" crossorigin="anonymous"></script>
+</body>
+</html>
